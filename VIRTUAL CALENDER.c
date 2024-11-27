@@ -142,6 +142,8 @@ void excluir(){
 	        CLIENTE[i].CPF = 0;
 	    }
 	}
+	printf("Contato excluido com sucesso!!!\n");
+	sleep(1);
 	menu();
 	}
 }
