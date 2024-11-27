@@ -76,7 +76,7 @@ void menu() {
 		break;
 
 	default:
-		printf("Opcao invalida!!!!");
+		printf("Opcao invalida!!!!\n");
 		sleep(1);
 		menu();
 		break;
