@@ -107,7 +107,7 @@ void cadastrar() {
 	  CLIENTE[clientes_cadastrados].CPF = S;
 	}
 	getchar();
-	printf("Digite o email do contato: ");
+	printf("Digite o email do cliente: ");
 	fgets(CLIENTE[clientes_cadastrados].EMAIL, 100, stdin);
 	printf("Digite o DDD: ");
 	scanf("%d", &CLIENTE[clientes_cadastrados].DDD);
