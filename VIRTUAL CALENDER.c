@@ -3,6 +3,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <time.h>
+#include <stdbool.h>
 //Constante:
 #ifndef LIMITE_TOTAL
 #define LIMITE_TOTAL 10//Limite de cada produto a ser comprado por pessoa;
