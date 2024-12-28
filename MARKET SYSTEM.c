@@ -44,7 +44,7 @@ void infoproduto(Produto i) {
 void menu() {
 	printf("\n======================================\n");
 	printf("==========LOJINHO DO TADEU============\n");
-	printf("========QUEM N COMPROU SE FU*=========\n");
+	printf("======================================\n");
 	printf("======================================\n");
 	printf("\nSELECIONE UMA OPCAO A BAIXO:\n");
 	printf("1 - CADASTRAR PRODUTO!\n");
