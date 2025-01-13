@@ -29,6 +29,7 @@ void cadastrar();
 void listarclientes();
 void excluir();
 void consulta();
+void Reajuste(int i);
 //////////////////////////
 int main()
 {
@@ -140,7 +141,8 @@ void excluir(){
 	scanf("%lld", &TI);
 	for(int i=0; i<clientes_cadastrados; i++){
 	    if(CLIENTE[i].CPF == TI){
-	        CLIENTE[i].CPF = 0;
+	        Reajuste(i);
+	        clientes_cadastrados--;
 	    }
 	}
 	printf("Contato excluido com sucesso!!!\n");
@@ -292,7 +294,11 @@ void listarclientes() {
 		menu();
 	}
 }
-
+void Reajuste(int i){
+    for(int j=i; j<clientes_cadastrados - 1; j++){
+        CLIENTE[j] = CLIENTE[j+1];
+    }
+}
 void infocliente(int X) {
 	printf("NOME: %s\n", strtok(CLIENTE[X].NOME, "\n"));
 	usleep(50000);
